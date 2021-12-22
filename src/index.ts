@@ -5,8 +5,4 @@ const response = saySomething("hello");
 log.magenta(response);
 
 
-<<<<<<< HEAD
-//this is the main branch
-=======
-//this is feature 
->>>>>>> feature--add-linting
+//this is the main branch.

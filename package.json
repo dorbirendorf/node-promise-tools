@@ -8,9 +8,17 @@
     "build": "rm -rf dist && swc src -d dist",
     "build-dev": "npm run build && node dist/index.js",
     "dev": "nodemon",
-    "start": "npm run build && NODE_ENV=production node dist/index.js"
+    "start": "npm run build && NODE_ENV=production node dist/index.js",
+    "lint": "eslint src/**/*.ts",
+    "format": "eslint src/**/*.ts --fix"
   },
-  "keywords": ["typescript","nodemon","swc","esm","node.js"],
+  "keywords": [
+    "typescript",
+    "nodemon",
+    "swc",
+    "esm",
+    "node.js"
+  ],
   "author": {
     "name": "Yariv Gilad",
     "email": "yariv.gilad@gmail.com",
@@ -21,6 +29,9 @@
     "@swc/cli": "^0.1.55",
     "@swc/core": "^1.2.120",
     "@types/node": "^16.11.13",
+    "@typescript-eslint/eslint-plugin": "^5.8.0",
+    "@typescript-eslint/parser": "^5.8.0",
+    "eslint": "^8.5.0",
     "nodemon": "^2.0.15",
     "typescript": "^4.5.4"
   },

@@ -1,4 +1,4 @@
-import {PromiseIterable} from "./types.js";
+import { PromiseIterable } from "./types.js";
 
 export async function each(
     iterable: PromiseIterable,

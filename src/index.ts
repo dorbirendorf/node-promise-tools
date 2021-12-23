@@ -1,7 +1,8 @@
-import log from "@ajar/marker";
-import { saySomething } from "./myModule.js";
-
-const response = saySomething("hello");
-log.magenta(response);
-
-//this is the main branch.
+export { delay, echo, random } from "./utils.js";
+export { all } from "./all.js";
+export { props } from "./props.js";
+export { each } from "./each.js";
+export { mapParallel, mapSeries } from "./map.js";
+export { filterParallel, filterSeries } from "./filter.js";
+export { reduce } from "./reduce.js";
+export { race, some } from "./race.js";

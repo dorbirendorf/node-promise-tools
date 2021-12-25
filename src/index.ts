@@ -7,4 +7,3 @@ export { filterParallel, filterSeries } from "./filter.js";
 export { reduce } from "./reduce.js";
 export { race, some } from "./race.js";
 
-console.log("live");

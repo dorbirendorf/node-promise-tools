@@ -42,8 +42,7 @@
     "typescript": "^4.5.4"
   },
   "dependencies": {
-    "@ajar/marker": "^1.3.2",
-    "@dorbiren/slugger": "^1.0.0"
+    "@ajar/marker": "^1.3.2"
   },
   "files": [
     "dist/**/*"

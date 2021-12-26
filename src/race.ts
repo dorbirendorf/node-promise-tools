@@ -1,4 +1,4 @@
-import PromiseIterable from "./types.js";
+import {PromiseIterable} from "./types.js";
 //--------------------------------------------------
 // Doesn't work!
 // export async function race(promises) {
@@ -14,7 +14,7 @@ import PromiseIterable from "./types.js";
 // }
 //--------------------------------------------------
 // you have to use the Promise object
-export async function race(promises: PromiseIterable): Promise<any> {
+export async function race(promises: any[]): Promise<any> {
     promises = await promises;
     return await new Promise((resolve) => {
         promises.forEach(async (p: Promise<any>) => {
@@ -25,7 +25,7 @@ export async function race(promises: PromiseIterable): Promise<any> {
 //--------------------------------------------------
 // same here - you have to use the Promise object
 export async function some(
-    promises: PromiseIterable,
+    promises: any[],
     num: number
 ): Promise<Iterable<any>> {
     promises = await promises;

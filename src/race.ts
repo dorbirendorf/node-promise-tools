@@ -1,4 +1,4 @@
-import {PromiseIterable} from "./types.js";
+import { PromiseIterable } from "./types.js";
 //--------------------------------------------------
 // Doesn't work!
 // export async function race(promises) {

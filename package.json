@@ -42,10 +42,6 @@
   "dependencies": {
     "@ajar/marker": "^1.3.2"
   },
-  "files": [
-    "dist/**/*",
-    "typings/**/*"
-  ],
   "repository": {
     "type": "git",
     "url": "git+https://dorbiren@bitbucket.org/dorbiren/eslintdemo.git"

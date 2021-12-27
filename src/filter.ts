@@ -16,7 +16,7 @@ export async function filterSeries(
 //--------------------------------------------------
 
 export async function filterParallel(
-    iterable: PromiseIterable|any,
+    iterable: PromiseIterable | any,
     cb: (input: any) => Promise<boolean>
 ) {
     const results = [];

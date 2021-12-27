@@ -1,7 +1,7 @@
 import { IPropsInput, IPropsOutput } from "./types.js";
 
 export async function props(
-    promisesObj: IPropsInput | Promise<IPropsInput> 
+    promisesObj: IPropsInput | Promise<IPropsInput>
 ): Promise<IPropsOutput> {
     const results: IPropsOutput = {};
     promisesObj = await promisesObj;

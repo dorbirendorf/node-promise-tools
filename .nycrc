@@ -1,7 +1,7 @@
 {
     "extends": "@istanbuljs/nyc-config-typescript",
     "include": ["src/**/*.ts"],
-    "exclude": ["node_modules/"],
+    "exclude": ["arc/myModules.ts"],
     "extension": [".ts"],
     "reporter": ["text","html"],
     "report-dir": "./coverage",

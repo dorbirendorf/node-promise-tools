@@ -19,6 +19,11 @@ export const echo = async (msg: string, ms: number): Promise<string> => {
     return msg;
 };
 
+export const silentEcho = async (msg: string, ms: number): Promise<string> => {
+    await delay(ms);
+    return msg;
+};
+
 //--------------------------------------------------
 
 export const random = (max: number, min = 0): number =>

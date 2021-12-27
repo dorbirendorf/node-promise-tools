@@ -3,7 +3,7 @@ import { PromiseIterable } from "./types.js";
 
 export async function filterSeries(
     iterable: PromiseIterable,
-    cb: (input: any) => boolean
+    cb: (input: any) => Promise<boolean>
 ) {
     const results = [];
     iterable = await iterable;
@@ -16,8 +16,8 @@ export async function filterSeries(
 //--------------------------------------------------
 
 export async function filterParallel(
-    iterable: Promise<any>[] | Promise<Promise<any>[]>,
-    cb: (input: any) => boolean
+    iterable: PromiseIterable|any,
+    cb: (input: any) => Promise<boolean>
 ) {
     const results = [];
     iterable = await iterable;
